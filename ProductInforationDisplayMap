@@ -1,0 +1,353 @@
+产品列表
+
+产品名：product.name
+产品价格： product.price
+
+产品详情：
+产品名： product.name
+产品
+
+
+
+
+
+{
+  "id": 3,
+#产品名称 @产品列表 @产品信息   
+ "name": "Fresh 天然玫瑰花瓣补水保湿面膜",   
+#产品详情 @产品详情  
+ "description": "花蜜、米糠、黄糖，看似不太名贵的材料经过提拣加工后，往往带来令人惊喜的美肤效果，fresh 分别以它们的珍贵精华加上多种优质天然成份，研制出 4 款天然瑰宝护肤产品。材料经过适心选配、多重提拣、烦复制作后，结晶品当然价值连城，是物有所值还是浪得虚名要亲身试过才能知晓，但肯定的是 fresh 这个名字已被引入成为 LVMH 世界著名品牌集团旗下，可见产品质素已得到广泛认同。",
+  "price": "560.0",
+  "display_price": "¥560.00",
+  "available_on": "2015-04-01T00:00:00.000Z",
+  "slug": "fresh",
+  "meta_description": "",
+  "meta_keywords": "",
+  "shipping_category_id": 1,
+  "taxon_ids": [
+    115
+  ],
+  "total_on_hand": 20,
+#一个产品，1. 没有variant，比如美容仪等。 2. 多个variant，每个variant 有库存或者没有库存。
+# 在产品库产品详情中，如果variant库存不为零，将显示图片得同时，在图片下方显示图片对于兑换的价格。 如果variant库存为空。将只显示图片
+  "has_variants": true,
+  "master": {
+    "id": 16,
+    "name": "Fresh 天然玫瑰花瓣补水保湿面膜",
+    "sku": "",
+#产品价格 @产品列表     Note: 在列表中显示master价格， master价格在输入时要输入常用标准size的价格。
+    "price": "560.0",
+    "weight": "0.0",
+    "height": null,
+    "width": null,
+    "depth": null,
+    "is_master": true,
+    "slug": "fresh",
+    "description": "",
+    "track_inventory": true,
+    "cost_price": null,
+    "display_price": "¥560.00",
+    "options_text": "",
+    "in_stock": false,
+    "is_backorderable": true,
+    "total_on_hand": 0,
+    "is_destroyed": false,
+    "option_values": [],
+#这里的照片适用于所有得variant，先显示master图片，在显示variant图片。 
+    "images": [
+      {
+        "id": 2,
+        "position": 1,
+        "attachment_content_type": "image/jpeg",
+        "attachment_file_name": "rosemask.jpg",
+        "type": "Spree::Image",
+        "attachment_updated_at": "2015-04-26T07:08:49.932Z",
+        "attachment_width": 278,
+        "attachment_height": 278,
+        "alt": "",
+        "viewable_type": "Spree::Variant",
+        "viewable_id": 16,
+        
+        "mini_url": "/spree/products/2/mini/rosemask.jpg?1430032129",
+        "small_url": "/spree/products/2/small/rosemask.jpg?1430032129",
+        "product_url": "/spree/products/2/product/rosemask.jpg?1430032129",
+        "large_url": "/spree/products/2/large/rosemask.jpg?1430032129"
+      }
+      {
+        "id": 38,
+        "position": 2,
+        "attachment_content_type": "image/jpeg",
+        "attachment_file_name": "rosemask100_2.jpg",
+        "type": "Spree::Image",
+        "attachment_updated_at": "2015-07-20T13:29:41.340Z",
+        "attachment_width": 400,
+        "attachment_height": 400,
+        "alt": "",
+        "viewable_type": "Spree::Variant",
+        "viewable_id": 16,
+        "mini_url": "/spree/products/38/mini/rosemask100_2.jpg?1437398981",
+        "small_url": "/spree/products/38/small/rosemask100_2.jpg?1437398981",
+        "product_url": "/spree/products/38/product/rosemask100_2.jpg?1437398981",
+        "large_url": "/spree/products/38/large/rosemask100_2.jpg?1437398981"
+      }
+    ]
+  },
+  "variants": [
+    {
+      "id": 17,
+      "name": "Fresh 天然玫瑰花瓣补水保湿面膜",
+      "sku": "",
+      "price": "108.0",
+      "weight": "0.0",
+      "height": null,
+      "width": null,
+      "depth": null,
+      "is_master": false,
+      "slug": "fresh",
+      "description": "花蜜、米糠、黄糖，看似不太名贵的材料经过提拣加工后，往往带来令人惊喜的美肤效果，fresh 分别以它们的珍贵精华加上多种优质天然成份，研制出 4 款天然瑰宝护肤产品。材料经过适心选配、多重提拣、烦复制作后，结晶品当然价值连城，是物有所值还是浪得虚名要亲身试过才能知晓，但肯定的是 fresh 这个名字已被引入成为 LVMH 世界著名品牌集团旗下，可见产品质素已得到广泛认同。",
+      "track_inventory": true,
+      "cost_price": null,
+      "display_price": "¥108.00",
+      "options_text": "净容量: 20g/ml",
+    #库存不为零，显示商品图片得同时在下方显示价格。如果库存为0，只显示图片。  
+      "in_stock": true,
+      "is_backorderable": true,
+      "total_on_hand": 10,
+      "is_destroyed": false,
+      "option_values": [
+        {
+          "id": 44,
+          "name": "20g/ml",
+          "presentation": "20g/ml",
+          "option_type_name": "净容量",
+          "option_type_id": 5,
+          "option_type_presentation": "净容量"
+        }
+      ],
+      "images": [
+        {
+          "id": 3,
+          "position": 1,
+          "attachment_content_type": "image/jpeg",
+          "attachment_file_name": "rosemask20.jpg",
+          "type": "Spree::Image",
+          "attachment_updated_at": "2015-04-26T07:13:03.752Z",
+          "attachment_width": 400,
+          "attachment_height": 400,
+          "alt": "",
+          "viewable_type": "Spree::Variant",
+          "viewable_id": 17,
+          "mini_url": "/spree/products/3/mini/rosemask20.jpg?1430032383",
+          "small_url": "/spree/products/3/small/rosemask20.jpg?1430032383",
+          "product_url": "/spree/products/3/product/rosemask20.jpg?1430032383",
+          "large_url": "/spree/products/3/large/rosemask20.jpg?1430032383"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Fresh 天然玫瑰花瓣补水保湿面膜",
+      "sku": "",
+      "price": "25.0",
+      "weight": "0.0",
+      "height": null,
+      "width": null,
+      "depth": null,
+      "is_master": false,
+      "slug": "fresh",
+      "description": "",
+      "track_inventory": true,
+      "cost_price": null,
+      "display_price": "¥25.00",
+      "options_text": "化妆品净容量: 4g/ml",
+      "in_stock": true,
+      "is_backorderable": true,
+      "total_on_hand": 10,
+      "is_destroyed": false,
+      "option_values": [
+        {
+          "id": 33,
+          "name": "4g/ml",
+          "presentation": "4g/ml",
+          "option_type_name": "化妆品净容量",
+          "option_type_id": 5,
+          "option_type_presentation": "化妆品净容量"
+        }
+      ],
+      "images": [
+        {
+          "id": 4,
+          "position": 1,
+          "attachment_content_type": "image/jpeg",
+          "attachment_file_name": "rosemask4ml.jpg",
+          "type": "Spree::Image",
+          "attachment_updated_at": "2015-04-26T07:16:18.447Z",
+          "attachment_width": 400,
+          "attachment_height": 400,
+          "alt": "",
+          "viewable_type": "Spree::Variant",
+          "viewable_id": 22,
+          "mini_url": "/spree/products/4/mini/rosemask4ml.jpg?1430032578",
+          "small_url": "/spree/products/4/small/rosemask4ml.jpg?1430032578",
+          "product_url": "/spree/products/4/product/rosemask4ml.jpg?1430032578",
+          "large_url": "/spree/products/4/large/rosemask4ml.jpg?1430032578"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Fresh 天然玫瑰花瓣补水保湿面膜",
+      "sku": "",
+      "price": "560.0",
+      "weight": "0.0",
+      "height": null,
+      "width": null,
+      "depth": null,
+      "is_master": false,
+      "slug": "fresh",
+      "description": "花蜜、米糠、黄糖，看似不太名贵的材料经过提拣加工后，往往带来令人惊喜的美肤效果，fresh 分别以它们的珍贵精华加上多种优质天然成份，研制出 4 款天然瑰宝护肤产品。材料经过适心选配、多重提拣、烦复制作后，结晶品当然价值连城，是物有所值还是浪得虚名要亲身试过才能知晓，但肯定的是 fresh 这个名字已被引入成为 LVMH 世界著名品牌集团旗下，可见产品质素已得到广泛认同。",
+      "track_inventory": true,
+      "cost_price": null,
+      "display_price": "¥560.00",
+      "options_text": "化妆品净容量: 100g/ml",
+      "in_stock": false,
+      "is_backorderable": true,
+      "total_on_hand": 0,
+      "is_destroyed": false,
+      "option_values": [
+        {
+          "id": 67,
+          "name": "100g/ml",
+          "presentation": "100g/ml",
+          "option_type_name": "化妆品净容量",
+          "option_type_id": 5,
+          "option_type_presentation": "化妆品净容量"
+        }
+      ],
+      "images": []
+    }
+  ],
+  "option_types": [
+    {
+      "id": 5,
+      "name": "净容量",
+      "presentation": "净容量",
+      "position": 5
+    }
+  ],
+  "product_properties": [
+    {
+      "id": 19,
+      "product_id": 3,
+      "property_id": 7,
+      "value": "美国",
+      "property_name": "原产地"
+    },
+    {
+      "id": 20,
+      "product_id": 3,
+      "property_id": 8,
+      "value": "",
+      "property_name": "上市时间"
+    },
+    {
+      "id": 21,
+      "product_id": 3,
+      "property_id": 9,
+      "value": "36个月",
+      "property_name": "保质期"
+    },
+    {
+      "id": 22,
+      "product_id": 3,
+      "property_id": 10,
+      "value": "所有肤质",
+      "property_name": "适合肤质"
+    },
+    {
+      "id": 23,
+      "product_id": 3,
+      "property_id": 11,
+      "value": "所有人群",
+      "property_name": "适合人群"
+    },
+    {
+      "id": 24,
+      "product_id": 3,
+      "property_id": 12,
+      "value": "脸部",
+      "property_name": "适用部位"
+    },
+    {
+      "id": 25,
+      "product_id": 3,
+      "property_id": 13,
+      "value": "",
+      "property_name": "是否防水"
+    },
+    {
+      "id": 26,
+      "product_id": 3,
+      "property_id": 14,
+      "value": "",
+      "property_name": "起泡程度"
+    },
+    {
+      "id": 31,
+      "product_id": 3,
+      "property_id": 19,
+      "value": "",
+      "property_name": "温馨提示"
+    },
+    {
+      "id": 32,
+      "product_id": 3,
+      "property_id": 20,
+      "value": "",
+      "property_name": "天猫导购链接"
+    },
+    {
+      "id": 33,
+      "product_id": 3,
+      "property_id": 21,
+      "value": "",
+      "property_name": "京东导购链接"
+    },
+    {
+      "id": 34,
+      "product_id": 3,
+      "property_id": 22,
+      "value": "",
+      "property_name": "聚美优品导购链接"
+    },
+    {
+      "id": 27,
+      "product_id": 3,
+      "property_id": 15,
+      "value": "保湿",
+      "property_name": "功效"
+    },
+    {
+      "id": 30,
+      "product_id": 3,
+      "property_id": 18,
+      "value": "于清洁、爽肤后，在面部肌肤湿润时，取适量涂于肌肤，避开眼周区域，待5-10分钟以清水洗净，可日常使用，加速肤质改善。",
+      "property_name": "使用方法"
+    }
+  ],
+  "classifications": [
+    {
+      "taxon_id": 115,
+      "position": 1,
+      "taxon": {
+        "id": 115,
+        "name": "面膜",
+        "pretty_name": "美容护肤 -> 护肤 -> 面膜",
+        "permalink": "cosmetics/skincare/mian-mo",
+        "parent_id": 2,
+        "taxonomy_id": 1,
+        "taxons": []
+      }
+    }
+  ]
+}S
