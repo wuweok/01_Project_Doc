@@ -1,21 +1,42 @@
 产品列表
 
-产品名：product.name
+产品名：   product.name
 产品价格： product.price
+产品图片： product.master.images.small_url
 
-产品详情：
-产品名： product.name
-产品
+产品信息：
+产品名：   product.name
+产品图片: product.master.images.product_url                                                           // ？用哪个url好
+兑换价格： product.variants.price + product.variants.points + product.variants.comissions              // 如果库存为零，只显示图片，不显示兑换价格。
+大陆价格： If (has_variants ==true) product.variants.market_cn_price +  product.variants.options_text  // ？当option 太多时，option text会太长。TODO: 优化option text 内容，比如：净容量 是否有必要。 
+         If (has_variants ==false) product.master.market_cn_price +  product.master.options_text     // 此时option text 可能为空，在master中option text在后台是没有办法录入
+香港价格： If (has_variants ==true) product.variants.market_hk_price +  product.variants.options_text  // 当option 太多时，option text会太长。TODO: 优化option text 内容，比如：净容量 是否有必要。 
+         If (has_variants ==false) product.master.market_hk_price +  product.master.options_text     // 此时option text 可能为空，在master中option text在后台是没有办法录入
+美国价格： If (has_variants ==true) product.variants.market_us_price +  product.variants.options_text  // 当option 太多时，option text会太长。TODO: 优化option text 内容，比如：净容量 是否有必要。 
+         If (has_variants ==false) product.master.market_us_price +  product.master.options_text     // 此时option text 可能为空，在master中option text在后台是没有办法录入
+      
+产品详细信息：
+产品名称： product.name
+产品图片： product.master.images.product_url 
+原产地：   product.product_properties[id=19].property_name     product.product_properties[id=19].value
+保质期：   product.product_properties[id=21].property_name     product.product_properties[id=21].value
+适合肤质: product.product_properties[id=22].property_name     product.product_properties[id=22].value
+适合人群: product.product_properties[id=23].property_name     product.product_properties[id=23].value
+是否防水: product.product_properties[id=25].property_name     product.product_properties[id=25].value
+功效:    product.product_properties[id=27].property_name     product.product_properties[id=27].value
+使用方法： product.product_properties[id=30].property_name     product.product_properties[id=27].value
+产品详情： product.description
 
-
-
-
+导购区： 建立相应的表，和接口
+推荐区： 是否可以使用分类的属性
+我想要： 建立相应的表和接口
+评论区： 建立相应的表和接口
+统计区： 建立相应的表和接口
+      
 
 {
-  "id": 3,
-#产品名称 @产品列表 @产品信息   
- "name": "Fresh 天然玫瑰花瓣补水保湿面膜",   
-#产品详情 @产品详情  
+  "id": 3, 
+ "name": "Fresh 天然玫瑰花瓣补水保湿面膜",    
  "description": "花蜜、米糠、黄糖，看似不太名贵的材料经过提拣加工后，往往带来令人惊喜的美肤效果，fresh 分别以它们的珍贵精华加上多种优质天然成份，研制出 4 款天然瑰宝护肤产品。材料经过适心选配、多重提拣、烦复制作后，结晶品当然价值连城，是物有所值还是浪得虚名要亲身试过才能知晓，但肯定的是 fresh 这个名字已被引入成为 LVMH 世界著名品牌集团旗下，可见产品质素已得到广泛认同。",
   "price": "560.0",
   "display_price": "¥560.00",
@@ -28,14 +49,11 @@
     115
   ],
   "total_on_hand": 20,
-#一个产品，1. 没有variant，比如美容仪等。 2. 多个variant，每个variant 有库存或者没有库存。
-# 在产品库产品详情中，如果variant库存不为零，将显示图片得同时，在图片下方显示图片对于兑换的价格。 如果variant库存为空。将只显示图片
   "has_variants": true,
   "master": {
     "id": 16,
     "name": "Fresh 天然玫瑰花瓣补水保湿面膜",
     "sku": "",
-#产品价格 @产品列表     Note: 在列表中显示master价格， master价格在输入时要输入常用标准size的价格。
     "price": "560.0",
     "weight": "0.0",
     "height": null,
@@ -53,7 +71,6 @@
     "total_on_hand": 0,
     "is_destroyed": false,
     "option_values": [],
-#这里的照片适用于所有得variant，先显示master图片，在显示variant图片。 
     "images": [
       {
         "id": 2,
@@ -109,7 +126,6 @@
       "cost_price": null,
       "display_price": "¥108.00",
       "options_text": "净容量: 20g/ml",
-    #库存不为零，显示商品图片得同时在下方显示价格。如果库存为0，只显示图片。  
       "in_stock": true,
       "is_backorderable": true,
       "total_on_hand": 10,
